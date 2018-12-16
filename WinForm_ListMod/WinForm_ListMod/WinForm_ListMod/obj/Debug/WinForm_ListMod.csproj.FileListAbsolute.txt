@@ -1,0 +1,10 @@
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\bin\Debug\WinForm_ListMod.exe.config
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\bin\Debug\WinForm_ListMod.exe
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\bin\Debug\WinForm_ListMod.pdb
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\obj\Debug\WinForm_ListMod.csprojAssemblyReference.cache
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\obj\Debug\WinForm_ListMod.FrmMain.resources
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\obj\Debug\WinForm_ListMod.Properties.Resources.resources
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\obj\Debug\WinForm_ListMod.csproj.GenerateResource.cache
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\obj\Debug\WinForm_ListMod.csproj.CoreCompileInputs.cache
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\obj\Debug\WinForm_ListMod.exe
+C:\Users\SlyWolf\Documents\GitHub\ListMod\WinForm_ListMod\WinForm_ListMod\WinForm_ListMod\obj\Debug\WinForm_ListMod.pdb
