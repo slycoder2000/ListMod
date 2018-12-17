@@ -35,6 +35,22 @@ namespace WinForm_ListMod
         {
             txtBx_ReplaceCustomLineNum.Enabled = chkBx_ReplaceCustomLineNum.Checked;
         }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmMain_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.Width < 488) this.Width = 488;
+            if (this.Height < 355) this.Height = 355;
+
+            // determine position of checkbox less 10px and subtract left position of textbox
+            txtbx_Source.Width = chkBx_SeparateLines.Location.X - 10 - txtbx_Source.Location.X;
+            // determine window width less 50px and subtract left position of textbox
+            txtbx_Result.Width = this.Width-50 - txtbx_Result.Location.X;
+        }
     }
 
     public static class ProcessSource
@@ -56,7 +72,7 @@ namespace WinForm_ListMod
                 cntr++;
 
                 // Add Prefix to Line
-                //CheckPrefix(frmObj, ResultText);
+                CheckPrefix(frmObj, ResultText);
 
                 // Check String Delimiter
                 CheckStrDelim(frmObj, ResultText);
@@ -67,12 +83,18 @@ namespace WinForm_ListMod
                 // Check String Delimiter
                 CheckStrDelim(frmObj, ResultText);
 
+                // Check Suffix
+                CheckSuffix(frmObj, ResultText);
+
+                // Check Replace Custom
+                CheckReplaceCustom(frmObj, ResultText, cntr);
+
                 CheckLnDelim(frmObj, ResultText, cntr == lines.Count());
 
                 CheckSeparateLines(frmObj, ResultText);
 
-                //(frmObj, ResultText);
             }
+
             AppendCount(frmObj, ResultText);
 
             // show StringBuilder in TextBox
@@ -115,8 +137,31 @@ namespace WinForm_ListMod
         private static void CheckSeparateLines(FrmMain frmObj, StringBuilder ResultText)
         {
             if(frmObj.chkBx_SeparateLines.Checked)
-                ResultText.Append("\r\n");
+                ResultText.AppendLine();
 
+        }
+
+        private static void CheckPrefix(FrmMain frmObj, StringBuilder ResultText)
+        {
+            if(frmObj.txtBx_Prefix.Text!="")
+            {
+                ResultText.Append(frmObj.txtBx_Prefix.Text);
+            }
+        }
+        private static void CheckSuffix(FrmMain frmObj, StringBuilder ResultText)
+        {
+            if (frmObj.txtBx_Suffix.Text != "")
+            {
+                ResultText.Append(frmObj.txtBx_Suffix.Text);
+            }
+        }
+
+        private static void CheckReplaceCustom(FrmMain frmObj, StringBuilder ResultText, int LineNum)
+        {
+            if(frmObj.chkBx_ReplaceCustomLineNum.Checked)
+            {
+                ResultText.Replace(frmObj.txtBx_ReplaceCustomLineNum.Text, LineNum.ToString());
+            }
         }
     }
 

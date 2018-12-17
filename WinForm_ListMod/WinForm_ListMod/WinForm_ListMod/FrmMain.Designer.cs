@@ -41,13 +41,15 @@
             this.chkBx_ReplaceCustomLineNum = new System.Windows.Forms.CheckBox();
             this.txtBx_ReplaceCustomLineNum = new System.Windows.Forms.TextBox();
             this.txtBx_Prefix = new System.Windows.Forms.TextBox();
-            this.txtSuffix = new System.Windows.Forms.TextBox();
+            this.txtBx_Suffix = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtbx_Source
             // 
+            this.txtbx_Source.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtbx_Source.Location = new System.Drawing.Point(12, 35);
             this.txtbx_Source.Multiline = true;
             this.txtbx_Source.Name = "txtbx_Source";
@@ -57,6 +59,7 @@
             // 
             // txtbx_Result
             // 
+            this.txtbx_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtbx_Result.Location = new System.Drawing.Point(313, 35);
             this.txtbx_Result.Multiline = true;
             this.txtbx_Result.Name = "txtbx_Result";
@@ -65,9 +68,10 @@
             // 
             // btn_result
             // 
-            this.btn_result.Location = new System.Drawing.Point(313, 274);
+            this.btn_result.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_result.Location = new System.Drawing.Point(313, 273);
             this.btn_result.Name = "btn_result";
-            this.btn_result.Size = new System.Drawing.Size(91, 22);
+            this.btn_result.Size = new System.Drawing.Size(88, 23);
             this.btn_result.TabIndex = 2;
             this.btn_result.Text = "Process Result";
             this.btn_result.UseVisualStyleBackColor = true;
@@ -75,6 +79,7 @@
             // 
             // chkBx_StrDelim
             // 
+            this.chkBx_StrDelim.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkBx_StrDelim.AutoSize = true;
             this.chkBx_StrDelim.Location = new System.Drawing.Point(150, 60);
             this.chkBx_StrDelim.Name = "chkBx_StrDelim";
@@ -85,6 +90,7 @@
             // 
             // txtBx_StrDelim
             // 
+            this.txtBx_StrDelim.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBx_StrDelim.Location = new System.Drawing.Point(252, 60);
             this.txtBx_StrDelim.Name = "txtBx_StrDelim";
             this.txtBx_StrDelim.Size = new System.Drawing.Size(22, 20);
@@ -93,6 +99,7 @@
             // 
             // chkBx_LnDelim
             // 
+            this.chkBx_LnDelim.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkBx_LnDelim.AutoSize = true;
             this.chkBx_LnDelim.Location = new System.Drawing.Point(150, 83);
             this.chkBx_LnDelim.Name = "chkBx_LnDelim";
@@ -104,6 +111,7 @@
             // 
             // txtBx_LnDelim
             // 
+            this.txtBx_LnDelim.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBx_LnDelim.Enabled = false;
             this.txtBx_LnDelim.Location = new System.Drawing.Point(252, 86);
             this.txtBx_LnDelim.Name = "txtBx_LnDelim";
@@ -113,6 +121,7 @@
             // 
             // chkBx_SeparateLines
             // 
+            this.chkBx_SeparateLines.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkBx_SeparateLines.AutoSize = true;
             this.chkBx_SeparateLines.Checked = true;
             this.chkBx_SeparateLines.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -125,6 +134,7 @@
             // 
             // chkBx_AppendCount
             // 
+            this.chkBx_AppendCount.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkBx_AppendCount.AutoSize = true;
             this.chkBx_AppendCount.Location = new System.Drawing.Point(150, 129);
             this.chkBx_AppendCount.Name = "chkBx_AppendCount";
@@ -135,6 +145,7 @@
             // 
             // chkBx_LnDelimLastLine
             // 
+            this.chkBx_LnDelimLastLine.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkBx_LnDelimLastLine.AutoSize = true;
             this.chkBx_LnDelimLastLine.Checked = true;
             this.chkBx_LnDelimLastLine.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -148,6 +159,7 @@
             // 
             // chkBx_ReplaceCustomLineNum
             // 
+            this.chkBx_ReplaceCustomLineNum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkBx_ReplaceCustomLineNum.AutoSize = true;
             this.chkBx_ReplaceCustomLineNum.Location = new System.Drawing.Point(150, 188);
             this.chkBx_ReplaceCustomLineNum.Name = "chkBx_ReplaceCustomLineNum";
@@ -159,6 +171,7 @@
             // 
             // txtBx_ReplaceCustomLineNum
             // 
+            this.txtBx_ReplaceCustomLineNum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBx_ReplaceCustomLineNum.Enabled = false;
             this.txtBx_ReplaceCustomLineNum.Location = new System.Drawing.Point(207, 211);
             this.txtBx_ReplaceCustomLineNum.Name = "txtBx_ReplaceCustomLineNum";
@@ -168,22 +181,25 @@
             // 
             // txtBx_Prefix
             // 
+            this.txtBx_Prefix.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtBx_Prefix.Location = new System.Drawing.Point(44, 237);
             this.txtBx_Prefix.Name = "txtBx_Prefix";
             this.txtBx_Prefix.Size = new System.Drawing.Size(100, 20);
             this.txtBx_Prefix.TabIndex = 12;
             this.txtBx_Prefix.Text = "Line{#}: ";
             // 
-            // txtSuffix
+            // txtBx_Suffix
             // 
-            this.txtSuffix.Location = new System.Drawing.Point(44, 263);
-            this.txtSuffix.Name = "txtSuffix";
-            this.txtSuffix.Size = new System.Drawing.Size(100, 20);
-            this.txtSuffix.TabIndex = 13;
-            this.txtSuffix.Text = "{#}";
+            this.txtBx_Suffix.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtBx_Suffix.Location = new System.Drawing.Point(44, 263);
+            this.txtBx_Suffix.Name = "txtBx_Suffix";
+            this.txtBx_Suffix.Size = new System.Drawing.Size(100, 20);
+            this.txtBx_Suffix.TabIndex = 13;
+            this.txtBx_Suffix.Text = "{#}";
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 240);
             this.label1.Name = "label1";
@@ -193,6 +209,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(9, 266);
             this.label2.Name = "label2";
@@ -207,7 +224,7 @@
             this.ClientSize = new System.Drawing.Size(472, 316);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSuffix);
+            this.Controls.Add(this.txtBx_Suffix);
             this.Controls.Add(this.txtBx_Prefix);
             this.Controls.Add(this.txtBx_ReplaceCustomLineNum);
             this.Controls.Add(this.chkBx_ReplaceCustomLineNum);
@@ -223,6 +240,8 @@
             this.Controls.Add(this.txtbx_Source);
             this.Name = "FrmMain";
             this.Text = "List Modifier";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.SizeChanged += new System.EventHandler(this.FrmMain_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,7 +263,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtBx_Prefix;
-        public System.Windows.Forms.TextBox txtSuffix;
+        public System.Windows.Forms.TextBox txtBx_Suffix;
     }
 }
 
