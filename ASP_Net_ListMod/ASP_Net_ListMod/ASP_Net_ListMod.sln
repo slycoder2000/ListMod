@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP_Net_ListMod", "ASP_Net_ListMod\", "{31B46438-212C-48A5-BC76-FACFD2E58154}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56755"
+		Debug.AspNetCompiler.PhysicalPath = "ASP_Net_ListMod\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56755\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56755"
+		Release.AspNetCompiler.PhysicalPath = "ASP_Net_ListMod\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56755\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56755"
+		SlnRelativePath = "ASP_Net_ListMod\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31B46438-212C-48A5-BC76-FACFD2E58154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B46438-212C-48A5-BC76-FACFD2E58154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A501DD1B-3C8D-4F09-A2A3-713E6ADC867D}
+	EndGlobalSection
+EndGlobal
