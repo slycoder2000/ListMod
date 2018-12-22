@@ -20,7 +20,8 @@ namespace WinForm_ListMod
 
         private void btn_result_Click(object sender, EventArgs e)
         {
-            ProcessSource.Process(this);
+            ProcessSource MyProcess = new ProcessSource();
+            MyProcess.Process(this);
         }
 
         private void chkBx_LnDelim_CheckedChanged(object sender, EventArgs e)
@@ -53,10 +54,10 @@ namespace WinForm_ListMod
         }
     }
 
-    public static class ProcessSource
+    public class ProcessSource
     {
 
-        public static void Process(FrmMain frmObj)
+        public void Process(FrmMain frmObj)
         {
             // Instatiate and clear StringBuilder
 
@@ -102,14 +103,14 @@ namespace WinForm_ListMod
 
         }
 
-        private static void CheckStrDelim(FrmMain frmObj, StringBuilder ResultText)
+        private void CheckStrDelim(FrmMain frmObj, StringBuilder ResultText)
         {
             if (frmObj.chkBx_StrDelim.Checked)
                 ResultText.Append(frmObj.txtBx_StrDelim.Text);
 
         }
 
-        private static void AppendCount(FrmMain frmObj, StringBuilder ResultText)
+        private void AppendCount(FrmMain frmObj, StringBuilder ResultText)
         {
             // Append line count if desired
             if (frmObj.chkBx_AppendCount.Checked)
@@ -117,7 +118,7 @@ namespace WinForm_ListMod
 
         }
 
-        private static void CheckLnDelim(FrmMain frmObj, StringBuilder ResultText, bool IsLastLine)
+        private void CheckLnDelim(FrmMain frmObj, StringBuilder ResultText, bool IsLastLine)
         {
 
             if (frmObj.chkBx_LnDelim.Checked)
@@ -134,21 +135,21 @@ namespace WinForm_ListMod
 
         }
 
-        private static void CheckSeparateLines(FrmMain frmObj, StringBuilder ResultText)
+        private void CheckSeparateLines(FrmMain frmObj, StringBuilder ResultText)
         {
             if(frmObj.chkBx_SeparateLines.Checked)
                 ResultText.AppendLine();
 
         }
 
-        private static void CheckPrefix(FrmMain frmObj, StringBuilder ResultText)
+        private void CheckPrefix(FrmMain frmObj, StringBuilder ResultText)
         {
             if(frmObj.txtBx_Prefix.Text!="")
             {
                 ResultText.Append(frmObj.txtBx_Prefix.Text);
             }
         }
-        private static void CheckSuffix(FrmMain frmObj, StringBuilder ResultText)
+        private void CheckSuffix(FrmMain frmObj, StringBuilder ResultText)
         {
             if (frmObj.txtBx_Suffix.Text != "")
             {
@@ -156,7 +157,7 @@ namespace WinForm_ListMod
             }
         }
 
-        private static void CheckReplaceCustom(FrmMain frmObj, StringBuilder ResultText, int LineNum)
+        private void CheckReplaceCustom(FrmMain frmObj, StringBuilder ResultText, int LineNum)
         {
             if(frmObj.chkBx_ReplaceCustomLineNum.Checked)
             {
